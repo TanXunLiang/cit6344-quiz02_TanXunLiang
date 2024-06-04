@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             val number3 = editText3.text.toString().toDoubleOrNull() ?: 0.0
 
             val result = (number1 + number2 + number3).toInt()
-            textViewResult.text = "Result: $result"
+            textViewResult.text = " $result"
         }
         buttonSubtract.setOnClickListener {
             val number1 = editText1.text.toString().toDoubleOrNull() ?: 0.0
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             val number3 = editText3.text.toString().toDoubleOrNull() ?: 0.0
 
             val result = (number1 - number2 + number3).toInt()
-            textViewResult.text = "Result: $result"
+            textViewResult.text = " $result"
         }
         buttonMultiply.setOnClickListener {
             val number1 = editText1.text.toString().toDoubleOrNull() ?: 0.0
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
             val number3 = editText3.text.toString().toDoubleOrNull() ?: 0.0
 
             val result = (number1 * number2 - number3).toInt()
-            textViewResult.text = "Result: $result"
+            textViewResult.text = " $result"
         }
     }
 }
